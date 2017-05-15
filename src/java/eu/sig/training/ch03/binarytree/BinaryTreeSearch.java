@@ -8,11 +8,7 @@ public class BinaryTreeSearch {
         if (node.getValue() == nodeValue) {
             return depth;
         } else {
-//            if (nodeValue < node.getValue() && node.getLeft() != null) {
-//            	return 1+ calculateDepth(node.getLeft(), nodeValue);          	
-//            } else {
-//            	return 1+ calculateDepth(node.getRight(), nodeValue);
-//            }
+
         	return traversalByValue(node, nodeValue);
         }
     }
