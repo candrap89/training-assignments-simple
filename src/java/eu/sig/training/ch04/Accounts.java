@@ -14,7 +14,7 @@ public  class Accounts {
     	return sum % 11 == 0;
     }
     
-    public Transfer makeTransfer (String counterAccount, Money amount) throws BusinessException {
+    public Transfer makeTransfer (String counterAccount, Money2 amount) throws BusinessException2 {
     
     int sum = 0;
     for (int i = 0; i < counterAccount.length(); i++) {
@@ -29,7 +29,7 @@ public  class Accounts {
         Transfer result = new Transfer(this, acct, amount);
         return result;
     } else {
-        throw new BusinessException("Invalid account number!");
+        throw new BusinessException2("Invalid account number!");
     }
     }
     

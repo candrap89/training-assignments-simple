@@ -1,9 +1,9 @@
 package eu.sig.training.ch04;
 
-public class BusinessException extends Exception {
+public class BusinessException2 extends Exception {
     private static final long serialVersionUID = 1L;
 
-    public BusinessException(String message) {
+    public BusinessException2(String message) {
         super(message);
     }
 }
