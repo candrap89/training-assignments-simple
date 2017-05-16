@@ -7,17 +7,15 @@ public class BuildAndSendMail {
         String mId = parameterObject.getFirstName().charAt(0) + "." + parameterObject.getLastName().substring(0, 7) + "@"
             + parameterObject.getDivision().substring(0, 5) + ".compa.ny";
         // Format the message given the content type and raw message
-        MailMessage mMessage = formatMessage(font,
-            parameterObject.getMessage1() + parameterObject.getMessage2() + parameterObject.getMessage3());
-        // Send message
+        MailMessage mMessage = parameterObject.getmMessage(); // Send message
         m.send(mId, parameterObject.getSubject(), mMessage);
     }
     // end::buildAndSendMail[]
 
-    @SuppressWarnings("unused")
-    private MailMessage formatMessage(MailFont font, String string) {
-        return null;
-    }
+//    @SuppressWarnings("unused")
+//    private MailMessage formatMessage(MailFont font, String string) {
+//        return null;
+//    }
 
     private class MailMan {
 
@@ -26,12 +24,12 @@ public class BuildAndSendMail {
 
     }
 
-    private class MailFont {
+//    private class MailFont {
+//
+//    }
 
-    }
-
-    private class MailMessage {
-
-    }
+//    private class MailMessage {
+//
+//    }
 
 }

@@ -8,6 +8,20 @@ public class MailObject {
 	private String message1;
 	private String message2;
 	private String message3;
+	private MailMessage mMessage;
+	private MailFont font;
+
+	public MailMessage getmMessage() {
+		return formatMessage(font, getMessage1() + getMessage2() + getMessage3());
+	}
+
+	private MailMessage formatMessage(MailFont font, String string) {
+		return null;
+	}
+
+	public void setmMessage(MailMessage mMessage) {
+		this.mMessage = mMessage;
+	}
 
 	public MailObject(String firstName, String lastName, String division, String subject, String message1,
 			String message2, String message3) {
