@@ -23,15 +23,14 @@ public class MailObject {
 		this.mMessage = mMessage;
 	}
 
-	public MailObject(String firstName, String lastName, String division, String subject, String message1,
-			String message2, String message3) {
-		this.firstName = firstName;
-		this.lastName = lastName;
+	public MailObject(DetailName DetailNameObject, String division, String subject, DetailMessage DetailMessageObject) {
+		this.firstName = DetailNameObject.getFirstName();
+		this.lastName = DetailNameObject.getLastName();
 		this.division = division;
 		this.subject = subject;
-		this.message1 = message1;
-		this.message2 = message2;
-		this.message3 = message3;
+		this.message1 = DetailMessageObject.getMessage1();
+		this.message2 = DetailMessageObject.getMessage2();
+		this.message3 = DetailMessageObject.getMessage3();
 	}
 
 	public String getFirstName() {
